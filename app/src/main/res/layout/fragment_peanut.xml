@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.peanutcalscreen.PeanutFragment">
+
+    <data>
+
+        <variable
+            name="peanutViewModel"
+            type="com.example.osonhisob.screens.peanutcalscreen.PeanutViewModel" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            style="@style/screenStyle"
+            tools:ignore="HardcodedText"
+            android:padding="8dp"
+            android:background="#F4F4F4"
+            android:layout_height="match_parent">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#F4F4F4"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#F4F4F4"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:text="@string/umumiynarx"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="60"
+                            android:textSize="24dp"
+                            android:text="0"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/peanut_result_1"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#F4F4F4"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#F4F4F4"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:text="@string/tushganmagiz"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="60"
+                            android:textSize="24dp"
+                            android:text="0"
+                            android:id="@+id/peanut_result_2"
+
+                            android:textColor="#2196F3"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#F4F4F4"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#F4F4F4"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="40"
+                            android:text="@string/oxirgisumma"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="60"
+                            android:textSize="24dp"
+                            android:text="0"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/peanut_result_3"
+                            android:textStyle="bold"
+                            android:textColor="#2196F3"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:background="#F4F4F4"
+                android:padding="2dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:padding="8dp"
+                        android:gravity="center"
+                        android:background="#F4F4F4"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/foyda_zarar"
+                            android:layout_weight="40"
+                            android:text="@string/foyda"
+                            android:textSize="18dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="60"
+                            android:textSize="24dp"
+                            android:text="0"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/peanut_result_4"
+
+                            android:textColor="#2196F3"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:textColor="@color/black"
+                    android:text="@string/umumiy_kilo"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@drawable/back_of_input"
+                    android:lines="1"
+                    android:padding="4dp"
+                    android:inputType="number"
+                    android:textColorHint="#000"
+                    android:outlineSpotShadowColor="#fff"
+                    android:layout_width="0dp"
+                    android:id="@+id/input_peanut1"
+                    android:layout_weight="50"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="4dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/narxi"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@drawable/back_of_input"
+                    android:lines="1"
+                    android:padding="4dp"
+                    android:id="@+id/input_peanut2"
+                    android:inputType="number"
+                    android:textColorHint="#000"
+                    android:outlineSpotShadowColor="#fff"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/chiqindi"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_back"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="4dp"
+                        android:tooltipText="dddd"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:id="@+id/spinner_peanut2"
+                        android:gravity="center"
+                        android:layout_height="40dp"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/protesnti"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_back"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="4dp"
+                        android:tooltipText="dddd"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:id="@+id/spinner_peanut1"
+                        android:gravity="center"
+                        android:layout_height="40dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/maydasi"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_back"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="4dp"
+                        android:tooltipText="dddd"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:id="@+id/spinner_peanut4"
+                        android:gravity="center"
+                        android:layout_height="40dp"/>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/chiqindi_magiz"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_back"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="4dp"
+                        android:tooltipText="dddd"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:id="@+id/spinner_peanut3"
+                        android:gravity="center"
+                        android:layout_height="40dp"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:text="@string/terish_narxi"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_back"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_marginLeft="4dp"
+                        android:tooltipText="dddd"
+                        android:layout_gravity="center"
+                        android:textSize="16dp"
+                        android:id="@+id/spinner_peanut5"
+                        android:gravity="center"
+                        android:layout_height="40dp"/>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:textColor="@color/black"
+                    android:text="@string/sotishnarxi"
+                    android:layout_gravity="center"
+                    android:textSize="16dp"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:background="@drawable/back_of_input"
+                    android:lines="1"
+                    android:padding="4dp"
+                    android:inputType="number"
+                    android:textColorHint="#000"
+                    android:outlineSpotShadowColor="#fff"
+                    android:layout_width="0dp"
+                    android:id="@+id/input_peanut3"
+                    android:layout_weight="50"
+                    android:layout_height="50dp"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/result"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_green_cart"
+                    android:layout_height="wrap_content"
+                    android:text="@string/report" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

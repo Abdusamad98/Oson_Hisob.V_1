@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.osonhisob.screens.homescreen.HomeFragment"
+        android:label="@string/fragment_hom"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_calculatorFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_peanutFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/peanutFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_termaFragment"
+            app:destination="@id/termaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.osonhisob.screens.calculatorscreen.CalculatorFragment"
+        android:label="@string/fragment_calculator"
+        tools:layout="@layout/fragment_calculator" />
+    <fragment
+        android:id="@+id/peanutFragment"
+        android:name="com.example.osonhisob.screens.peanutcalscreen.PeanutFragment"
+        android:label="@string/penut_fragment_title"
+        tools:layout="@layout/fragment_peanut" >
+        <action
+            android:id="@+id/action_peanutFragment_to_peanutResultFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/peanutResultFragment" />
+        <action
+            android:id="@+id/action_peanutFragment_to_historyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peanutResultFragment"
+        android:name="com.example.osonhisob.screens.peanutresultscreen.PeanutResultFragment"
+        android:label="@string/penut_result"
+        tools:layout="@layout/fragment_peanut_result" >
+        <argument
+            android:name="report"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.osonhisob.screens.aboutscreen.AboutFragment"
+        tools:layout="@layout/fragment_about"
+        android:label="@string/about" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.osonhisob.screens.rulesscreen.RulesFragment"
+        android:label="@string/hisoblash_haqida"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/historyFragment"
+        tools:layout="@layout/fragment_history"
+        android:name="com.example.osonhisob.screens.penutcalhistoryscreen.HistoryFragment"
+        android:label="@string/History" />
+    <fragment
+        android:id="@+id/termaFragment"
+        android:name="com.example.osonhisob.screens.terma.TermaFragment"
+        android:label="@string/terma_fragment_title"
+        tools:layout="@layout/fragment_terma" >
+        <action
+            android:id="@+id/action_termaFragment_to_peanutResultFragment"
+            app:destination="@id/peanutResultFragment" />
+    </fragment>
+</navigation>

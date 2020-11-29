@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="android.widget.RelativeLayout"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorTitleBackround"
+        android:layout_height="match_parent"/>
+
+<ImageView
+    android:layout_width="@dimen/sizeIcon"
+    android:id="@+id/input_element_image"
+    tools:ignore="ContentDescription"
+    android:layout_centerInParent="true"
+    tools:src="@drawable/ic_trash"
+    android:layout_height="@dimen/sizeIcon"
+    app:tint="@color/colorImage" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSizeInputElement"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        android:text="1"
+        android:id="@+id/input_element_text"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/input_element_click"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?selectableItemBackground"
+        android:layout_height="match_parent"/>
+</merge>

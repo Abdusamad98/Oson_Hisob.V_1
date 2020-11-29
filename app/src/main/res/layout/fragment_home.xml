@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.homescreen.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/homeScreen"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="16dp"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:padding="16dp"
+                    android:background="@drawable/icon_cal"
+                    android:layout_height="150dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/app_name"
+                    android:padding="16dp"
+                    android:textSize="32dp"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/fragment_calculator"
+                    android:id="@+id/calculator_screen"
+                    android:background="@drawable/homescreen_button"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/penut_fragment_title"
+                    android:id="@+id/penut_screen"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/homescreen_button"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:text="@string/peanut_shell_title"
+                    android:id="@+id/peanut_shell_screen"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/homescreen_button"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>

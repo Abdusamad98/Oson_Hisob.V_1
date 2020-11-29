@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Осон Ҳисоб</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Aпп Ҳақида</string>
+    <string name="rules">Хисоблаш ҳақида</string>
+    <string name="share">share</string>
+    <string name="about_text">Ушбу дастур йерёнгоқ олди сотдисида айрим ҳисоб китобларни осон ҳисоблаш мақсадида тузилди.\nДастур камчиликлари юзасидан +998995214862 абонентига ёки abdukarimov.abdusamad@mail.ru  електрон почтаси орқали орқали алоқага чиқишингиз мумкин. Ҳисобда адашманг! \nЕтиборингиз учун раҳмат.</string>
+    <string name="History">Калкулйатор Aрхив</string>
+    <string name="report">Ҳисоб ҳақида батафсил</string>
+    <string name="arxiv">Aрхивга ўтиш</string>
+    <string name="umumiy_kilo">Умумий кило (кг)</string>
+    <string name="narxi">Нархи</string>
+    <string name="protesnti">Фоизи (%)</string>
+    <string name="chiqindi">Ёнғоқ мусури (кг)</string>
+    <string name="tushganmagiz">Тушган мағиз (кг)</string>
+    <string name="umumiynarx">Олингандаги Сумма</string>
+    <string name="oxirgisumma">Сотилгандаги Сумма</string>
+    <string name="foyda">Фойда</string>
+    <string name="sotishnarxi">Сотиш нархи</string>
+    <string name="chiqindi_magiz">Мағиз мусури (кг)</string>
+    <string name="penut_fragment_title">Йерёнгоқ ҳисоб</string>
+    <string name="fragment_hom">Бош саҳифа</string>
+    <string name="fragment_calculator">Калкулятор</string>
+    <string name="penut_result">Ҳисоб ҳақида</string>
+    <string name="hisoblash_haqida">Ҳисоб ҳақида</string>
+    <string name="xisoblash_qoidasi">Ушбу иловани тузишдан кўзланган мақсад фойдаланувчига ҳисоб китоб ишларида оз бўлсада кўмаклашишдан иборат. Илованинг бош саҳифасида 3 та тугма мавжуд бўлиб, улардан бири калкулятор ойнасига олиб ўтади. Бу калкуляторнинг қулайлиги шуки , у ҳисобларни санаси билан сақлаш имконига ега екани билан ажралиб туради. Сақланган ҳисобларни бош менюдаги Калкулятор архивидан топишингиз мумкин. Кейинги терма йерёнғоқ ва йерёнғоқ ҳисоб ойналарида фойдаланувчи маҳсулотнинг унумлилик даражасини осон ҳисоблаш имконига ега. Бундан ташқари жуда кўп йерёнғоқ параметрларининг тахминий қийматлари танланган бўлиб фойдаланувчи бу қийматларни яна танлаш билан ўзгартириши мумкин. Ўзгаришлар бориши билан бир қаторда ойнадаги ҳисоблар ҳам автоматик янгиланиб боради.\n Дастур Мўнотов Aбдурасул учун махсус тайёрланди.</string>
+    <string name="peanut_shell_title">Терма ёнғоқ ҳисоб</string>
+    <string name="zarar">Зарар</string>
+    <string name="maydasi">Сечкаси</string>
+    <string name="save">Сақлаш</string>
+    <string name="tushganyongoq">Термаси (кг)</string>
+    <string name="magiz">Қолган Мағиз (кг)</string>
+    <string name="terma_foiz">Терма фоизи</string>
+    <string name="terish_narxi">Териш нархи</string>
+    <string name="qolgan_yongoq_chiqindi">Қолган ёнғоқ чиқиндиси</string>
+    <string name="qolgan_yongoq_foiz">Мағиз фоизи</string>
+    <string name="sotishnarxi_yongoq">Сотиш суммаси (терма)</string>
+    <string name="sotishnarxi_magiz">Сотиш суммаси (мағиз)</string>
+    <string name="terma_fragment_title">Терма Ёнғоқ</string>
+
+</resources>
